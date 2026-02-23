@@ -3,7 +3,295 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="gyeongsan_style.css" />
+    <title>gyeongsan</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div id="header">
+          <div class="logo">
+            <h3>
+              <a href="../index.html">KOREA</a>
+            </h3>
+          </div>
+          <div class="headerMenu">
+            <ul class="headerMenuList">
+              <li><a href="#">경기도</a></li>
+              <li><a href="#">강원도</a></li>
+              <li><a href="#">전라도</a></li>
+              <li><a href="#">충청도</a></li>
+              <li><a href="gyeongsang_index.html">경상도</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <!-- 경상도 지역 유명 행사 캘린더 테이블 -->
+          <div class="calendarArea">
+            <table id="calendar">
+              <h1 class="calendarHead">경상도 축제 안내 캘린더</h1>
+              <span class="year">2026</span>
+              <span class="month">03</span>
+              <thead>
+                <tr>
+                  <th class="holiday">일</th>
+                  <th>월</th>
+                  <th>화</th>
+                  <th>수</th>
+                  <th>목</th>
+                  <th>금</th>
+                  <th>토</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td onclick="location.href = '#crab'" class="holiday">
+                    1<br />울진대게와 붉은 대게 축제 (울진군)
+                  </td>
+                  <td onclick="location.href = '#crab'" class="holiday">
+                    2<br />울진대게와 붉은 대게 축제 (울진군)
+                  </td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td class="holiday">8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td class="holiday">15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                </tr>
+                <tr>
+                  <td class="holiday">22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td onclick="location.href = '#yeongCrab'">
+                    26<br />영덕대게축제 (영덕군)
+                  </td>
+                  <td onclick="location.href = '#yeongCrab'">
+                    27 <br />영덕대게축제 (영덕군)<br />고령대가야축제 (고령군)
+                  </td>
+                  <td onclick="location.href = '#yeongCrab'">
+                    28<br />영덕대게축제 (영덕군)<br />고령대가야축제 (고령군)
+                  </td>
+                </tr>
+                <tr>
+                  <td onclick="location.href = '#yeongCrab'" class="holiday">
+                    29<br />고령대가야축제 (고령군)
+                  </td>
+                  <td>30</td>
+                  <td>31</td>
+                  <td class="nextMonth">1</td>
+                  <td class="nextMonth">2</td>
+                  <td class="nextMonth">3</td>
+                  <td class="nextMonth">4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <!-- 갤러리 -->
+          <div class="galleryArea">
+            <!-- 한줄에 3개씩 노출, 이미지 호버시 확대 -->
+            <div class="galleryCard">
+              <div class="cardImg">
+                <a
+                  target="_blank"
+                  href="https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=98d02557-f042-4423-aabb-112b599b7eec"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    id="crab"
+                    src="../images/울진 대게 축제.png"
+                    alt="울진대게축제사진"
+                  />
+                </a>
+              </div>
+              <div class="cardDescription">
+                울진 지역의 대표적인 겨울 먹거리 축제로 울진군 주요수산 특산물인
+                울진대게와 붉은대게 우수성을 널리 알리고 울진군의 자치 경쟁력을
+                강화하기 위해 시행하는 행사입니다.
+              </div>
+            </div>
+            <div class="galleryCard">
+              <div class="cardImg">
+                <a
+                  target="_blank"
+                  href="https://ydstay.kr/stayEvent/detail?category=F&category2=%EC%98%81%EB%8D%95&id=165"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    id="yeongCrab"
+                    src="../images/영덕 대게 축제.png"
+                    alt="영덕대게축제사진"
+                  />
+                </a>
+              </div>
+              <div class="cardDescription">
+                영덕대게를 직접 잡고 맛보는 체험 중심의 핵심 프로그램으로 낚시와
+                통발잡이를 통해 축제의 즐거움을 가장 생생하게 전달합니다.
+              </div>
+            </div>
+            <div class="galleryCard">
+              <div class="cardImg">
+                <a
+                  href="https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=ecf68d54-808a-4ef0-8b64-122a4fc90f0f"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="../images/고령가야대축제.png"
+                    alt="고령가야대축제사진"
+                  />
+                </a>
+              </div>
+              <div class="cardDescription">
+                대가야의 독특한 역사와 문화를 배우고 즐길 수 있는, 오랜 역사를
+                지닌 고령군의 대표 축제입니다.
+              </div>
+            </div>
+            <div class="galleryCard">
+              <div class="cardImg">
+                <a
+                  href="https://www.busan.go.kr/index"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="../images/부산.png" alt="부산이미지" />
+                </a>
+              </div>
+              <div class="cardDescription">
+                부산은 대한민국 제2의 도시이자 대표적인 항구 도시로, 해운대와
+                광안리 같은 아름다운 해변과 국제시장, 자갈치시장 등 풍부한
+                먹거리로 유명합니다. 바다·도시·문화가 조화를 이루는 관광 명소로
+                사계절 내내 많은 관광객이 찾는 지역입니다.
+              </div>
+            </div>
+            <div class="galleryCard">
+              <div class="cardImg">
+                <a
+                  href="https://www.gbmg.go.kr/main.do"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="../images/문경.jpg" alt="문경이미지" />
+                </a>
+              </div>
+              <div class="cardDescription">
+                문경은 경상북도에 위치한 도시로, 수려한 자연경관과 깊은
+                역사·문화를 간직한 지역입니다. 문경새재를 비롯한 다양한 관광
+                명소와 전통 문화가 잘 보존되어 있어 사계절 내내 많은 방문객이
+                찾는 곳입니다.
+              </div>
+            </div>
+            <div class="galleryCard">
+              <div class="cardImg">
+                <a
+                  href="https://www.gyeongju.go.kr/tour/index.do"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="../images/경주.JPG" alt="경주이미지" />
+                </a>
+              </div>
+              <div class="cardDescription">
+                경주는 경상북도에 위치한 역사 도시로, 신라 천년의 수도였던 만큼
+                불국사와 석굴암 등 다양한 세계문화유산을 간직하고 있습니다.
+                전통과 현대가 조화를 이루는 관광 도시로 사계절 내내 많은
+                관광객이 방문합니다.
+              </div>
+            </div>
+            <div class="galleryCard">
+              <div class="cardImg">
+                <a
+                  href="https://www.cctf.or.kr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="../images/청송.jpg" alt="청송이미지" />
+                </a>
+              </div>
+              <div class="cardDescription">
+                청송은 경상북도에 위치한 지역으로, 주왕산을 비롯한 수려한
+                자연경관과 깨끗한 환경을 자랑하는 고장입니다. 특히 청송사과로 잘
+                알려져 있으며, 자연과 휴식을 함께 즐기기 좋은 관광지입니다.
+              </div>
+            </div>
+            <div class="galleryCard">
+              <div class="cardImg">
+                <a
+                  href="https://www.pohang.go.kr/phtour/index.do"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="../images/포항.jpg" alt="포항상생의손" />
+                </a>
+              </div>
+              <div class="cardDescription">
+                포항은 경상북도에 위치한 대표적인 해안 도시로, 아름다운 동해
+                바다와 호미곶 해맞이광장 등 다양한 관광 명소를 보유하고
+                있습니다. 산업과 관광이 조화를 이루는 도시로 많은 방문객이 찾고
+                있습니다.
+              </div>
+            </div>
+            <div class="galleryCard">
+              <div class="cardImg">
+                <a
+                  href="https://www.tourandong.com/public/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="../images/안동.jpg" alt="안동이미지" />
+                </a>
+              </div>
+              <div class="cardDescription">
+                안동은 경상북도에 위치한 전통 문화의 중심지로, 하회마을과
+                도산서원 등 소중한 문화유산을 간직한 도시입니다. 유교 문화와
+                전통이 잘 보존되어 있어 한국의 정신 문화를 느낄 수 있는
+                지역입니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footerArea">
+        <div>
+          <!-- 저작권마크 -->
+          Copyright 2026. TEAM2. All rights reserved.
+        </div>
+        <div>
+          <a href="Ask.html">여행문의</a>
+        </div>
+        <div id="footerLogo">
+          <!-- 로고 -->
+          KOREA
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
