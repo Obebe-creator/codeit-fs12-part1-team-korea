@@ -1,14 +1,27 @@
 :root {
-  --primary-color: #008fff;
+  --primary-color: #7c3aed;
   --border-color: #ddd;
   --sunday-color: #e53935;
+  --saturday-color: #008fff;
+}
+/* 전라도 메인 페이지로 복귀 */
+.jeollaHomeText {
+  position: fixed; /* 화면 기준 고정 */
+  top: 30px;
+  left: 40px;
+  z-index: 1000;
 }
 
-/* 기본 세팅 */
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: #f8f9fa;
+.jeollaHomeText a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.2s ease;
+}
+
+.jeollaHomeText a:hover {
+  opacity: 0.6;
 }
 
 /* 메인 영역 */
@@ -75,15 +88,15 @@ main {
   transition: background-color 0.2s ease;
 }
 
-/* hover 효과 */
-#calendar td:not(.nextMonth):hover {
-  background-color: #e3f2fd;
-  cursor: pointer;
-}
-
 /* 일요일 */
 .holiday {
   color: var(--sunday-color);
+  font-weight: bold;
+}
+
+/* 토요일 */
+.saturday {
+  color: var(--saturday-color);
   font-weight: bold;
 }
 
@@ -91,4 +104,17 @@ main {
 .nextMonth {
   color: #bbb;
   background-color: #fafafa;
+}
+
+/* 축제 링크 스타일 */
+#calendar td a {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+#calendar td a:hover {
+  text-decoration: underline;
 }
