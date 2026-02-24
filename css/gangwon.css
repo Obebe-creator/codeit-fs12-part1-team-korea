@@ -46,9 +46,10 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 2rem;
-  font-weight: 800;
-  white-space: nowrap;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111;
+  font-family: "Georgia", serif;
 }
 
 nav ul {
@@ -86,9 +87,11 @@ nav a:hover {
 }
 
 .hero {
-  padding: 56px 16px;
-  background: linear-gradient(180deg, #eaf3ff 0%, #ffffff 100%);
-  border-bottom: 1px solid #eee;
+  padding: 80px 16px;
+  background-image: url(https://www.gangwon.to/upload/board/BDMAIN11/3a4df073-ceeb-47df-95bb-0b9a41b8a09d.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-inner {
@@ -97,6 +100,7 @@ nav a:hover {
 }
 
 .hero-title {
+  color: #eee;
   margin: 0 0 10px;
   font-size: 2rem;
   font-weight: 900;
