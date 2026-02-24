@@ -404,7 +404,6 @@ nav#secondNav {
   right: 10%;
   top: 50%;
   color: #fff;
-  z-index: 999;
 }
 
 ul.secondNavMenu {
@@ -418,23 +417,4 @@ ul.secondNavMenu {
 
 .secondNavMenu li:hover {
   color: #000;
-}
-
-.galleryEvent {
-  display: flex;
-  max-width: 1400px;
-  margin: 100px auto;
-}
-
-.galleryEvent .galleryCard {
-  width: 25%;
-  height: 600px;
-}
-
-.height430 {
-  height: 430 !important;
-}
-
-.galleryEvent .cardImg {
-  max-height: 440px;
 }
