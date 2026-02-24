@@ -1,0 +1,342 @@
+* {
+    font-size: 1rem;
+}
+
+body {
+    background-color: #e1dddd;
+}
+
+#gnb {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+
+#gnb ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#gnb li a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f5f1f0;
+}
+
+#gnb li a:hover {
+    color: #ba1e09;
+}
+
+#header {
+    overflow: hidden;
+    width: 82%;
+    z-index: 10;
+    position: absolute;
+    top: 9%;
+    left: 18%;
+    display: flex;
+}
+
+#logo a {
+    background: linear-gradient(180deg, red 0%, blue 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+#header nav {
+    display: flex;
+    gap: 250px;
+    align-items: center;
+}
+
+#header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+#header li > a {
+    font-size: 1.25rem;
+}
+
+#sec_main {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main_img {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+
+}
+
+#main_image {
+    background-image: url(../images/main.jpg);
+}
+
+#main_image div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(7, 7, 7, 0) 100%);
+}
+
+#main_image h2 {
+    z-index: 3;
+    position: absolute;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(194, 184, 217, 0.7);
+}
+
+#tourist {
+    display: flex;
+    flex-direction: column;
+}
+
+#everland, #suwon_hwaseong, #seoul_park {
+    position: relative;
+    height: 100vh;
+}
+
+#everland_main {
+    background-image: url(../images/everland_main.jpg);
+}
+
+.main_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(7, 7, 7, 0) 100%);
+}
+
+.tourist_name {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 3rem;
+    color: rgba(205, 205, 205, 0.5);
+    font-weight: 900;
+}
+
+.everland_images, .suwon_hwaseong_images, .seoul_park_images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+#everland_introduce, #suwon_hwaseong_introduce, #seoul_park_introduce {
+    padding: 150px 100px;
+    height: 155vh;
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+
+.introduce_images {
+    display: flex;
+    gap: 25px;
+}
+
+.introduce_images article {
+    flex: 1 1 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.introduce_images img:hover {
+    transition: transform .35s;
+    transform: scale(120%);
+}
+
+.introduce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.introduce img {
+    width: 20vw;
+}
+
+.introduce_txt {
+    line-height: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.introduce_txt h3 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.introduce_txt p {
+    font-size: 1.25rem;
+}
+
+.tel_number {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.tel_number h3 {
+    padding: 0 100px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #2e2c2c;
+}
+
+#suwon_hwaseong_main {
+    background-image: url(../images/suwon_hwaseong_main.jpg);
+}
+
+#seoul_park_main {
+    background-image: url(../images/seoul_park_main.jpg);
+}
+
+#seoul_park .tourist_name {
+    color: rgba(220, 214, 232, 0.7);
+}
+
+#specialty {
+    padding: 100px;
+    text-align: center;
+}
+
+#specialty > h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+
+#specialty > article, #specialty > article > article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.specialty_card {
+    width: 400px;
+    height: 145px;
+    display: flex;
+    background-color: #ebeaea;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.specialty_card:hover {
+    color: #fff;
+    background-color: #ba1e09;
+}
+
+.specialty_imgs {
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.specialty_imgs img {
+    height: 100%;
+}
+
+#historical_figure {
+    background-color: rgb(213, 200, 200);
+    height: 320vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+}
+
+#historical_figure > article {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.historical_figure_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.historical_figure_txt h3 {
+    font-size: 1.5rem;
+}
+
+#historical_figure .yulgok {
+    flex-direction: row;
+    gap: 50px;
+}
+
+.yulgok_img {
+    box-sizing: border-box;
+    border: 3px solid #ffffff;
+}
+
+#festival {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200vh;
+}
+
+.calendar {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.calendar h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 80px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    width: 10vw;
+    padding: 10px;
+    vertical-align: top;
+    height: 20vh;
+}
+
+td:hover {
+    background: #e3f2fd;
+    cursor: pointer;
+}
+
+.sun { color: #d32f2f; }
+.sat { color: #1976d2; }
