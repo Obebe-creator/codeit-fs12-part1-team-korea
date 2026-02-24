@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "ROKG";
+  src: url("../../fonts/ROKG_R.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --primary-color: #008fff;
 }
@@ -8,6 +15,7 @@ html {
 
 body {
   margin: 0 auto;
+  font-family: "ROKG", sans-serif;
 }
 
 main {
@@ -418,23 +426,4 @@ ul.secondNavMenu {
 
 .secondNavMenu li:hover {
   color: #000;
-}
-
-.galleryEvent {
-  display: flex;
-  max-width: 1400px;
-  margin: 100px auto;
-}
-
-.galleryEvent .galleryCard {
-  width: 25%;
-  height: 600px;
-}
-
-.height430 {
-  height: 430 !important;
-}
-
-.galleryEvent .cardImg {
-  max-height: 440px;
 }
