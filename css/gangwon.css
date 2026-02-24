@@ -172,3 +172,15 @@ nav a:hover {
   color: #555;
   font-size: 0.95rem;
 }
+
+.footerArea {
+  display: flex;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: -3px 0px 6px rgba(0, 0, 0, 0.23);
+  font-weight: bold;
+  font-size: 1.05rem;
+}
