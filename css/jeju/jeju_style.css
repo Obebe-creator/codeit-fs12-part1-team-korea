@@ -37,6 +37,12 @@ header nav {
     color: rgb(255, 0, 0);
 }
 
+#main_image {
+    height: 271px;
+    background-image: url("/images/제주01.jpg");
+    background-position: center;
+}
+
 #festival {
     background-color: #b6d3f1;
     display: flex;
