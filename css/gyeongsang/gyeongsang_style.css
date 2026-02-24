@@ -1,0 +1,364 @@
+:root {
+  --primary-color: #008fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin: 150px auto;
+  max-width: 1600px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 1400px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td:not(.nextMonth):hover {
+  background-color: lightblue;
+}
+
+th {
+  font-weight: bold;
+  height: 50px;
+  text-align: center;
+}
+
+td {
+  text-align: left;
+  vertical-align: text-top;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+}
+
+td[onclick] {
+  cursor: pointer;
+}
+
+#today {
+  font-weight: bold;
+  background-color: bisque;
+}
+
+.year {
+  font-size: 30px;
+}
+
+.month {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.holiday {
+  color: rgb(255, 0, 0);
+}
+
+/* 다음날 일자 회색표시 */
+.nextMonth {
+  color: #afacac;
+}
+
+.calendarHead {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.galleryArea {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.galleryCard {
+  width: calc(100% / 3 - 30px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  height: 100%;
+  max-height: 750px;
+}
+
+.galleryCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardImg {
+  width: 100%;
+  max-height: 620px;
+  height: 100%;
+}
+
+.cardImg a img {
+  width: 100%;
+  /* height: 100%; */
+  height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+.cardDescription {
+  padding: 16px;
+  color: #333;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* 보여줄 줄 수 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 140px;
+}
+
+header {
+  position: sticky;
+  z-index: 1000;
+  background: #fff;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 30px;
+}
+
+#mapHeader {
+  position: sticky;
+  z-index: 1000;
+  background: #fff;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 30px;
+}
+
+div#header {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  align-content: center;
+}
+
+nav {
+  height: 100%;
+}
+
+.logo h3 {
+  font-size: 2rem;
+  background: linear-gradient(180deg, red 0%, blue 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.footerArea {
+  display: flex;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: -3px 0px 6px rgba(0, 0, 0, 0.23);
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+#footerLogo {
+  background: linear-gradient(180deg, red 0%, blue 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.headerMenuList {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+}
+
+/* ask 페이지 */
+
+.askArea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1.askTitle {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+form#askForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#askForm input,
+textarea {
+  width: 100%;
+  min-height: 50px;
+  border-radius: 10px;
+  padding: 12px 15px;
+  box-shadow: none;
+  border: 1px solid #f2f2f2;
+}
+
+select#askSelect {
+  min-height: 50px;
+  border-radius: 10px;
+  padding: 12px 15px;
+  border-color: #f2f2f2;
+  border-width: 1px;
+}
+
+#askTextarea {
+  min-height: 400px;
+}
+
+#askForm input:focus,
+#askForm textarea:focus,
+#askForm select:focus {
+  border: 1px solid rgb(92, 92, 236);
+  outline: none;
+}
+
+#submitButtonArea {
+  text-align: center;
+}
+
+button.blueButton {
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: #f2f2f2;
+}
+
+/* main 페이지 테스트 */
+.speech-btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 18px;
+  background-color: #8b5cf6; /* 말풍선 색 */
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* 말풍선 꼬리 */
+.speech-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* 꼬리 위치 */
+  left: 30px; /* 꼬리 좌우 위치 */
+  width: 0;
+  height: 0;
+  border-width: 10px 8px 0 8px;
+  border-style: solid;
+  border-color: #8b5cf6 transparent transparent transparent;
+}
+
+/* 호버 효과 */
+.speech-btn:hover {
+  background-color: #6d28d9;
+}
+
+.speech-btn:hover::after {
+  border-color: #6d28d9 transparent transparent transparent;
+}
+
+.mapArea {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.map {
+  width: 100%;
+  display: block;
+}
+
+.gyeonggi-btn {
+  position: absolute;
+  z-index: 999; /*z-index를 설정하는 이유, 혹시 모를 gnb 때문에*/
+  top: 32%;
+  left: 38%;
+}
+
+.gangwon-btn {
+  position: absolute;
+  z-index: 999; /*z-index를 설정하는 이유, 혹시 모를 gnb 때문에*/
+  top: 30%;
+  right: 42%;
+}
+
+.jeolla-btn {
+  position: absolute;
+  top: 56%;
+  left: 38%;
+  z-index: 999;
+}
+
+.chungcheong-btn {
+  position: absolute;
+  top: 43%;
+  left: 42%;
+  z-index: 999;
+}
+
+.gyeongsang-btn {
+  position: absolute;
+  top: 52%;
+  right: 38%;
+  z-index: 999;
+}
+
+.jeju-btn {
+  position: absolute;
+  bottom: 9%;
+  left: 32%;
+  z-index: 999;
+}
+
+.mapBody {
+  background-color: #7ec9e8;
+}
+
+#mapHeader {
+  position: fixed;
+  z-index: 1000;
+  box-shadow: none;
+  background: transparent;
+  left: 20%;
+  top: 5%;
+}
