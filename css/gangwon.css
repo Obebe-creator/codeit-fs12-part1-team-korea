@@ -15,7 +15,7 @@ header {
   top: 0;
   z-index: 1000;
   background: rgba(255, 255, 255);
-  border-bottom: 1px solid #eee; /* 헤더 아래 구분선 */
+  border-bottom: 1px solid #eee;
 }
 
 .header-inner {
@@ -26,4 +26,20 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+}
+
+.logo {
+  text-decoration: none; /* a 태그 밑줄 제거 */
+  display: inline-flex; /* 클릭 영역 깔끔하게 */
+  align-items: center;
+}
+
+.logo h3 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 0.5px;
+  background: linear-gradient(180deg, red 0%, blue 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
