@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "ROKG";
+  src: url("../fonts/ROKG_R.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "ROKG", sans-serif;
+}
