@@ -13,6 +13,7 @@ header {
     height: 80px;
     width: 100%;
     background-color: #ffffff;
+    z-index: 10;
 }
 
 header nav {
@@ -41,6 +42,39 @@ header nav {
     height: 271px;
     background-image: url("/images/제주01.jpg");
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#main_image h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    z-index: 2;
+}
+
+#main_image div {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.3);
+}
+
+#travel {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.travel_sec {
+    display: flex;
+    gap: 20px;
+}
+
+.travel_sec img {
+    height: 300px;
 }
 
 #festival {
