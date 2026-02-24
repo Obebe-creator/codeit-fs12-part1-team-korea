@@ -1,3 +1,24 @@
+/* 전라도 메인 페이지로 복귀 */
+.jeollaHomeText {
+  position: fixed; /* 화면 기준 고정 */
+  top: 30px;
+  left: 40px;
+  z-index: 1000;
+}
+
+.jeollaHomeText a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.2s ease;
+  color: black;
+}
+
+.jeollaHomeText a:hover {
+  opacity: 0.6;
+}
+
 .spots {
   padding: 100px 0;
 }
