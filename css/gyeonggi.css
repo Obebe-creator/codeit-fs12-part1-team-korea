@@ -38,9 +38,18 @@ body {
     display: flex;
 }
 
+#logo a {
+    background: linear-gradient(180deg, red 0%, blue 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
 #header nav {
     display: flex;
     gap: 250px;
+    align-items: center;
 }
 
 #header nav ul {
@@ -48,7 +57,7 @@ body {
     gap: 30px;
 }
 
-#header a {
+#header li > a {
     font-size: 1.25rem;
 }
 
