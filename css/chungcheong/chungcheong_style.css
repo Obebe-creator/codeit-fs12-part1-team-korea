@@ -48,7 +48,7 @@
   padding: 120px 0;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../images/충청도_히어로섹션.jpg");
+    url("../../images/충청도_히어로섹션.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -216,7 +216,7 @@
 /* =========================
    (한눈에 보기) 테이블
 ========================= */
-.slide {
+.description {
   margin-top: 40px;
   display: grid;
   gap: 26px;
