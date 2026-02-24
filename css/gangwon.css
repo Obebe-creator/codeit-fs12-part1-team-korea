@@ -9,3 +9,21 @@ body {
   background: #fff;
   line-height: 1.5;
 }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255);
+  border-bottom: 1px solid #eee; /* 헤더 아래 구분선 */
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
