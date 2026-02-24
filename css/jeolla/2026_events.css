@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #7c3aed;
+  --border-color: #ddd;
+  --sunday-color: #e53935;
+  --saturday-color: #008fff;
+}
+/* 전라도 메인 페이지로 복귀 */
+.jeollaHomeText {
+  position: fixed; /* 화면 기준 고정 */
+  top: 30px;
+  left: 40px;
+  z-index: 1000;
+}
+
+.jeollaHomeText a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.2s ease;
+  color: black;
+}
+
+.jeollaHomeText a:hover {
+  opacity: 0.6;
+}
+
+/* 메인 영역 */
+main {
+  max-width: 1400px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* 컨테이너 */
+.container {
+  width: 100%;
+}
+
+/* 캘린더 영역 */
+.calendarArea {
+  text-align: center;
+}
+
+/* 제목 */
+.calendarHead {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* 연도 / 월 */
+.year {
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+
+.month {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* 테이블 */
+#calendar {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 요일 헤더 */
+#calendar th {
+  height: 60px;
+  border: 1px solid var(--border-color);
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #f1f3f5;
+}
+
+/* 날짜 셀 */
+#calendar td {
+  height: 120px;
+  vertical-align: top;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+/* 일요일 */
+.holiday {
+  color: var(--sunday-color);
+  font-weight: bold;
+}
+
+/* 토요일 */
+.saturday {
+  color: var(--saturday-color);
+  font-weight: bold;
+}
+
+/* 다음 달 날짜 */
+.nextMonth {
+  color: #bbb;
+  background-color: #fafafa;
+}
+
+/* 축제 링크 스타일 */
+#calendar td a {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+#calendar td a:hover {
+  text-decoration: underline;
+}
