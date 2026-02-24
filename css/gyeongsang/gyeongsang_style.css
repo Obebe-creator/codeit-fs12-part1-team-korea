@@ -362,3 +362,78 @@ button.blueButton {
   left: 20%;
   top: 5%;
 }
+
+/* 제주페이지 디자인 */
+
+.jejuMain {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.jejuSection {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* 이미지 비율에 맞게 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jejuFirst {
+  background-image: url(../../images/제주밤바다2.jpg);
+}
+
+.jejuSecond {
+  background-image: url(../../images/한라산.png);
+}
+
+h1.jejuTitle {
+  font-size: 3rem;
+  color: #d9d4d4;
+  font-weight: bold;
+}
+
+nav#secondNav {
+  position: fixed;
+  right: 10%;
+  top: 50%;
+  color: #fff;
+}
+
+ul.secondNavMenu {
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.secondNavMenu li:hover {
+  color: #000;
+}
+
+.galleryEvent {
+  display: flex;
+  max-width: 1400px;
+  margin: 100px auto;
+}
+
+.galleryEvent .galleryCard {
+  width: 25%;
+  height: 600px;
+}
+
+.height430 {
+  height: 430 !important;
+}
+
+.galleryEvent .cardImg {
+  max-height: 440px;
+}
