@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Restaurants</title>
+	<title>맛집</title>
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/jeolla/restaurants.css">
 </head>
@@ -12,20 +12,101 @@
 
 	<main class="restaurants">
 
+		<!-- 탭 영역 -->
 		<div class="restaurants__tabs">
-			<button>Food</button>
-			<button>Cafe</button>
+			<button class="active">식당</button>
+			<button>카페</button>
 		</div>
 
+		<!-- 카드 영역 -->
 		<section class="restaurants__cards">
+			<div class="foodGrid">
 
-			<div class="card-group">
-				<article class="card">Food 1</article>
-				<article class="card">Food 2</article>
-				<article class="card">Food 3</article>
-				<article class="card">Food 4</article>
+				<!-- 1 -->
+				<article class="foodCard">
+					<div class="foodImage">
+						<img src="../images/veteran.jpg" alt="베테랑 칼국수">
+					</div>
+					<div class="foodContent">
+						<h3>Veteran Kalguksu</h3>
+						<p>전주 한옥마을 대표 칼국수 맛집</p>
+						<a href="https://naver.me/5vcHbWph" target="_blank" class="mapLink">
+							📍 네이버 지도
+						</a>
+					</div>
+				</article>
+
+				<!-- 2 -->
+				<article class="foodCard">
+					<div class="foodImage">
+						<img src="../images/bibimbap.jpg" alt="전주 비빔밥">
+					</div>
+					<div class="foodContent">
+						<h3>Jeonju Bibimbap Specialty</h3>
+						<p>전주 대표 메뉴 비빔밥 전문 한식당</p>
+						<a href="https://naver.me/5PVaOfnQ" target="_blank" class="mapLink">
+							📍 네이버 지도
+						</a>
+					</div>
+				</article>
+
+				<!-- 3 -->
+				<article class="foodCard">
+					<div class="foodImage">
+						<img src="../images/galbi.jpg" alt="담양 갈비">
+					</div>
+					<div class="foodContent">
+						<h3>Ssanggyo Charcoal Galbi</h3>
+						<p>담양 본점, 갈비 전문 체인점</p>
+						<a href="https://naver.me/GlJIgzu6" target="_blank" class="mapLink">
+							📍 네이버 지도
+						</a>
+					</div>
+				</article>
+
+				<!-- 4 -->
+				<article class="foodCard">
+					<div class="foodImage">
+						<img src="../images/headquarters.jpg" alt="본점">
+					</div>
+					<div class="foodContent">
+						<h3>Headquarters</h3>
+						<p>KIA 타이거즈 및 야구 선수 단골 맛집</p>
+						<a href="https://naver.me/xf59BNSG" target="_blank" class="mapLink">
+							📍 네이버 지도
+						</a>
+					</div>
+				</article>
+
+				<!-- 5 -->
+				<article class="foodCard">
+					<div class="foodImage">
+						<img src="../images/bluehouse.jpg" alt="블루하우스">
+					</div>
+					<div class="foodContent">
+						<h3>Blue House</h3>
+						<p>중식 전문 레스토랑</p>
+						<a href="https://naver.me/FxFt9RPt" target="_blank" class="mapLink">
+							📍 네이버 지도
+						</a>
+					</div>
+				</article>
+
+				<!-- 6 -->
+				<article class="foodCard">
+					<div class="foodImage">
+						<img src="../images/jinnam.jpg" alt="진남횟집">
+					</div>
+					<div class="foodContent">
+						<h3>Jinnam Raw Fish Restaurant</h3>
+						<p>여수 현지인도 찾는 40년 전통 횟집</p>
+						<a href="https://naver.me/54Lbn1oF" target="_blank" class="mapLink">
+							📍 네이버 지도
+						</a>
+					</div>
+				</article>
+
 			</div>
-
 		</section>
 
 	</main>
