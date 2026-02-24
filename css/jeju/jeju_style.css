@@ -63,6 +63,7 @@ header nav {
 }
 
 #travel {
+    padding: 200px 200px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -73,12 +74,28 @@ header nav {
     gap: 20px;
 }
 
+.travel_sec article {
+    flex: 1 1 0;
+    box-shadow: 6px 6px 10px rgba(104, 104, 104, 0.1);
+    padding-bottom: 30px;
+}
+
+.travel_sec article:hover {
+    color: #0b26af;
+}
+
 .travel_sec img {
+    margin-bottom: 30px;
     height: 300px;
+    width: 100%;
+}
+
+.travel_sec a {
+    text-align: center;
 }
 
 #festival {
-    background-color: #b6d3f1;
+    background-color: #edf2f9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,3 +133,47 @@ td:hover {
 
 .sun { color: #d32f2f; }
 .sat { color: #1976d2; }
+
+#specialty {
+    padding: 200px;
+}
+
+#specialty h2 {
+    margin-bottom: 50px;
+}
+
+.specialty_card {
+    display: flex;
+    gap: 25px;
+}
+
+.specialty_card article {
+    background-color: #e3f2fd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 450px;
+    gap: 25px;
+    border-radius: 300px;
+    flex: 1 1 0;
+}
+
+.specialty_card article:hover {
+    background-color: #167de3;
+    color: #fff;
+}
+
+.specialty_card article div {
+    margin: 20px;
+    border-radius: 200px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.specialty_card article div img {
+    width: 100%;
+    height: 100%;
+}
