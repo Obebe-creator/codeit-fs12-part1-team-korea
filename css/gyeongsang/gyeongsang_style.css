@@ -414,17 +414,33 @@ ul.secondNavMenu {
   display: flex;
   max-width: 1400px;
   margin: 100px auto;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .galleryEvent .galleryCard {
-  width: 25%;
-  height: 600px;
+  width: calc(100% / 4 - 30px);
+  height: 100%;
 }
 
-.height430 {
-  height: 430 !important;
+.height400 {
+  height: 400px !important;
 }
 
 .galleryEvent .cardImg {
-  max-height: 440px;
+  max-height: 400px;
+}
+
+.galleryEvent .cardDescription {
+  line-height: 1.5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.galleryEvent .cardDescription h1 {
+  font-size: 1.5rem;
 }
