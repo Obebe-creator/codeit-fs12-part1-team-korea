@@ -404,6 +404,7 @@ nav#secondNav {
   right: 10%;
   top: 50%;
   color: #fff;
+  z-index: 999;
 }
 
 ul.secondNavMenu {
