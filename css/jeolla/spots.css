@@ -1,0 +1,70 @@
+.spots {
+  padding: 100px 0;
+}
+
+.spotsGrid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열 */
+  gap: 60px; /* 관광지는 여백 크게 */
+}
+
+.spotCard {
+  border-radius: 24px;
+  overflow: hidden;
+  background: #fdfdfb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.spotCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
+
+.spotImage img {
+  width: 100%;
+  height: 420px; /* 이미지 크게 */
+  object-fit: cover;
+  display: block;
+}
+
+.spotContent {
+  padding: 30px;
+}
+
+.spotContent h3 {
+  margin: 0 0 12px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.spotContent p {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+}
+
+/* 지도 버튼 */
+
+.mapLink {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.spotCard:hover .mapLink {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
