@@ -202,3 +202,89 @@ body {
 #seoul_park .tourist_name {
     color: rgba(220, 214, 232, 0.7);
 }
+
+#specialty {
+    padding: 100px;
+    text-align: center;
+}
+
+#specialty > h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+
+#specialty > article, #specialty > article > article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.specialty_card {
+    width: 400px;
+    height: 145px;
+    display: flex;
+    background-color: #ebeaea;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.specialty_card:hover {
+    color: #fff;
+    background-color: #ba1e09;
+}
+
+.specialty_imgs {
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.specialty_imgs img {
+    height: 100%;
+}
+
+#historical_figure {
+    background-color: rgb(213, 200, 200);
+    height: 320vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+}
+
+#historical_figure > article {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.historical_figure_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.historical_figure_txt h3 {
+    font-size: 1.5rem;
+}
+
+#historical_figure .yulgok {
+    flex-direction: row;
+    gap: 50px;
+}
+
+.yulgok_img {
+    box-sizing: border-box;
+    border: 3px solid #fff;
+}
