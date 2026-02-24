@@ -68,6 +68,11 @@ header nav {
     flex-direction: column;
     gap: 30px;
     position: relative;
+    align-items: center;
+}
+
+#travel h2 {
+    align-self: flex-start;
 }
 
 #travel div {
@@ -79,8 +84,7 @@ header nav {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
-    top: 350px;
-    left: -20px;
+    bottom: 30px;
 }
 
 .travel_sec {
