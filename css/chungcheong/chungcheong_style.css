@@ -1,6 +1,6 @@
 @font-face {
   font-family: "ROKG";
-  src: url("../fonts/ROKG_R.TTF") format("truetype");
+  src: url("../../fonts/ROKG_R.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -45,6 +45,36 @@ body {
 .section-desc {
   color: #666;
   margin-bottom: 40px;
+}
+
+/* =========================
+   nav 영역
+========================= */
+
+#mapHeader {
+  position: sticky;
+  z-index: 1000;
+  background: #fff;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 30px;
+}
+
+.logo h3 {
+  font-size: 2rem;
+  background: linear-gradient(180deg, red 0%, blue 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
 }
 
 /* =========================
@@ -194,12 +224,6 @@ body {
   margin-bottom: 10px;
 }
 
-.month-meta {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
 .chip {
   font-size: 12px;
   font-weight: 600;
@@ -260,7 +284,6 @@ td {
   text-align: left;
   vertical-align: text-top;
   width: 200px;
-  height: 50x;
   padding: 10px;
   text-align: center;
 }
