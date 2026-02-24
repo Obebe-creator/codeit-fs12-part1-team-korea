@@ -73,3 +73,37 @@ nav a:hover {
   background: #f3f4f6;
   border-color: #e5e7eb;
 }
+
+@media (max-width: 720px) {
+  .header-inner {
+    flex-wrap: wrap; /* 줄바꿈 허용 */
+  }
+
+  header h1 {
+    order: 3; /* 제목을 아래로 내려도 보기 편하게 */
+    width: 100%;
+  }
+}
+
+.hero {
+  padding: 56px 16px;
+  background: linear-gradient(180deg, #eaf3ff 0%, #ffffff 100%);
+  border-bottom: 1px solid #eee;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.hero-desc {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #444;
+}
