@@ -1,0 +1,91 @@
+/* ===== 전체 ===== */
+
+.kia {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 255, 0, 0.08); /* 전체 영역 확인 */
+}
+
+/* ===== 상단 헤더 ===== */
+
+.kia__header {
+  padding: 20px 40px;
+  background-color: rgba(255, 0, 0, 0.15); /* 헤더 영역 */
+}
+
+.kia__back {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* ===== 좌우 레이아웃 ===== */
+
+.kia__layout {
+  display: flex;
+  height: calc(100% - 60px);
+  background-color: rgba(0, 0, 255, 0.08); /* layout 전체 */
+}
+
+/* ===== LEFT ===== */
+
+.kia__logo-area {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #000;
+
+  background-color: rgba(255, 165, 0, 0.2); /* LEFT 영역 */
+}
+
+.kia__logo-box {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  border: 2px solid #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(128, 0, 128, 0.2); /* 로고 박스 */
+}
+
+/* ===== RIGHT ===== */
+
+.kia__content {
+  flex: 7;
+  padding: 60px;
+
+  background-color: rgba(0, 255, 255, 0.15); /* RIGHT 영역 */
+}
+
+.kia__stadium {
+  font-size: 36px;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 0, 0.2); /* 제목 영역 */
+}
+
+/* ===== 카드 영역 ===== */
+
+.kia__card {
+  border: 2px solid #000;
+  border-radius: 30px;
+  padding: 40px;
+
+  background-color: rgba(255, 0, 255, 0.15); /* 카드 영역 */
+}
+
+.kia__info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kia__info li {
+  font-size: 18px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
+
+  background-color: rgba(0, 0, 0, 0.05); /* 각 줄 영역 */
+}
