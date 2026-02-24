@@ -407,40 +407,14 @@ nav#secondNav {
 }
 
 ul.secondNavMenu {
-  font-size: 2rem;
-}
-
-.galleryEvent {
-  display: flex;
-  max-width: 1400px;
-  margin: 100px auto;
-  width: 100%;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.galleryEvent .galleryCard {
-  width: calc(100% / 4 - 30px);
-  height: 100%;
-}
-
-.height400 {
-  height: 400px !important;
-}
-
-.galleryEvent .cardImg {
-  max-height: 400px;
-}
-
-.galleryEvent .cardDescription {
+  font-weight: bold;
   line-height: 1.5;
-  height: 100%;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 5px;
+  gap: 20px;
 }
 
-.galleryEvent .cardDescription h1 {
-  font-size: 1.5rem;
+.secondNavMenu li:hover {
+  color: #000;
 }
