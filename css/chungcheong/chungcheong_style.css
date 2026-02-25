@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "ROKG";
+  src: url("../../assets/fonts/ROKG_R.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "ROKG", sans-serif;
+}
+
 /* =========================
     root
 ========================= */
@@ -37,6 +48,36 @@
 }
 
 /* =========================
+   nav 영역
+========================= */
+
+#mapHeader {
+  position: sticky;
+  z-index: 1000;
+  background: #fff;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 30px;
+}
+
+.logo h3 {
+  font-size: 2rem;
+  background: linear-gradient(180deg, red 0%, blue 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+/* =========================
    히어로 영역
 ========================= */
 .hero {
@@ -48,7 +89,7 @@
   padding: 120px 0;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../../images/충청도_히어로섹션.jpg");
+    url("../../assets/images/충청도_히어로섹션.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -183,12 +224,6 @@
   margin-bottom: 10px;
 }
 
-.month-meta {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
 .chip {
   font-size: 12px;
   font-weight: 600;
@@ -249,7 +284,6 @@ td {
   text-align: left;
   vertical-align: text-top;
   width: 200px;
-  height: 50x;
   padding: 10px;
   text-align: center;
 }

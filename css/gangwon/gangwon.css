@@ -1,10 +1,13 @@
+@font-face {
+  font-family: "ROKG";
+  src: url("../fonts/ROKG_R.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family:
-    system-ui,
-    -apple-system,
-    "Apple SD Gothic Neo",
-    "Noto Sans KR",
-    sans-serif;
+  font-family: "ROKG", sans-serif;
+
   color: #111;
   background: #fff;
   line-height: 1.5;
@@ -46,10 +49,9 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #111;
-  font-family: "Georgia", serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #222;
 }
 
 nav ul {

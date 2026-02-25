@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "ROKG";
+  src: url("../../assets/fonts/ROKG_R.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "ROKG", sans-serif;
+}
+
 #logo a {
     background: linear-gradient(180deg, red 0%, blue 100%);
     background-clip: text;
@@ -40,7 +51,7 @@ header nav {
 
 #main_image {
     height: 271px;
-    background-image: url("/images/제주01.jpg");
+    background-image: url("/assets/images/제주01.jpg");
     background-position: center;
     display: flex;
     justify-content: center;
@@ -89,11 +100,12 @@ header nav {
 
 .travel_sec {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .travel_sec article {
-    flex: 1 1 0;
+    flex: 0 0 calc(25% - 22.5px);
     box-shadow: 6px 6px 10px rgba(104, 104, 104, 0.1);
     padding-bottom: 30px;
     background-color: #fff;
@@ -164,6 +176,7 @@ td:hover {
 .specialty_card {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 .specialty_card article {
@@ -175,7 +188,7 @@ td:hover {
     height: 450px;
     gap: 25px;
     border-radius: 300px;
-    flex: 1 1 0;
+    flex: 0 0 calc(25% - 22.5px);
 }
 
 .specialty_card article:hover {
@@ -199,6 +212,10 @@ td:hover {
 
 #festival_card {
     padding: 300px 180px;
+}
+
+#festival_card > h2 {
+    margin-bottom: 30px;
 }
 
 .festival_list {
