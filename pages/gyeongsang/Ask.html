@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/reset.css" />
+  <link rel="stylesheet" href="../../css/gyeongsang/gyeongsang_style.css" />
+  <title>KOREA/Ask</title>
+</head>
+
+<body>
+  <header id="mapHeader">
+    <nav>
+      <div>
+        <div class="logo">
+          <h3>
+            <a href="../../main.html">KOREA</a>
+          </h3>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <div class="container">
+        <div class="askArea">
+          <h1 class="askTitle">여행문의</h1>
+          <form id="askForm" action="#">
+            <select name="askSelect" id="askSelect">
+              <option value="0">지역선택</option>
+              <option value="1">경기도</option>
+              <option value="2">강원도</option>
+              <option value="3">전라도</option>
+              <option value="4">충청도</option>
+              <option value="5">경상도</option>
+            </select>
+            <input id="askInputTitle" name="askInputTitle" type="text" value="" placeholder="제 목" />
+            <input id="askInputName" name="askInputName" type="text" value="" placeholder="성 함" />
+            <input id="askInputPhone" name="askInputPhone" type="text" value="" placeholder="연락처" />
+            <textarea name="askTextarea" id="askTextarea" placeholder="문의내용"></textarea>
+          </form>
+          <div id="submitButtonArea">
+            <button class="blueButton" type="button" onclick="location.href = '../../main.html'">
+              제 출
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <div class="footerArea">
+      <div>
+        <!-- 저작권마크 -->
+        Copyright 2026. TEAM2. All rights reserved.
+      </div>
+      <div>
+        <a href="#">여행문의</a>
+      </div>
+      <div id="footerLogo">
+        <!-- 로고 -->
+        KOREA
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
