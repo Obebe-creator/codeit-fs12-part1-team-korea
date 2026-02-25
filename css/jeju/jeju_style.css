@@ -79,11 +79,6 @@ header nav {
     flex-direction: column;
     gap: 30px;
     position: relative;
-    align-items: center;
-}
-
-#travel h2 {
-    align-self: flex-start;
 }
 
 #travel div {
