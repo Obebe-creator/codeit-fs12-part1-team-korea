@@ -2,7 +2,15 @@
   font-size: 1rem;
 }
 
+@font-face {
+  font-family: "ROKG";
+  src: url("../../assets/fonts/ROKG_R.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  font-family: "ROKG", sans-serif;
   background-color: #e1dddd;
 }
 
